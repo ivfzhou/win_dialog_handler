@@ -1,0 +1,12 @@
+ask: {"method": "get_dialog", "title": "新建文本文档.txt - 记事本"}
+answer: {"data": { "titles": ["win_dialog_handler - main.py", "新建文本文档.txt - 记事本"], "content": ["123123\r\nasdasd"]}, "result": true}
+ask: {"method": "get_cmd_content", "index": 1}
+answer: {"result": true, "data": "Microsoft Windows [版本 10.0.19045.5131]\r\\n(c) Microsoft Corporation。保留所有权利。\r\\n\r\\nC:\\Users\\xxx>"}
+ask: {"method": "close_windows", "index": 0, "title": "新建文本文档.txt - 记事本"}
+answer: {"result": true}
+ask: {"method": "click_button", "index": 0, "title": "abc", "but": "确定"}
+answer: {"result": true}
+ask: {"method": "send_cmd_content", "index": 1, "content": "echo 'ok'\r"}
+answer: {"result": true}
+ask: {"method": "list_window"}
+answer: {"result": true, "data": ["win_dialog_handler - main.py", "新建文本文档.txt - 记事本"]}
